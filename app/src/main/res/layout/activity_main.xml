@@ -1,48 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+
+<RelativeLayout android:layout_height="match_parent"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white">
 
-
-    <Button
-        android:id="@+id/signin"
-        android:layout_width="117dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:layout_marginLeft="320dp"
-        android:layout_toEndOf="@+id/signup"
-        android:backgroundTint="@color/white"
-        android:onClick="openLoginActivity"
-        android:text="@string/signin_btn"
-        android:textColor="@color/black">
-
-    </Button>
-
-    <Button
-        android:id="@+id/signup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="200dp"
-        android:backgroundTint="@color/white"
-        android:onClick="openRegisterActivity"
-        android:text="@string/register_btn"
-        android:textColor="@color/black">
-
-    </Button>
-
-    <EditText
-        android:id="@+id/inputIngredients"
+    <TextView
+        android:id="@+id/one"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/signup"
-        android:layout_alignBottom="@+id/signup"
-        android:layout_marginTop="19dp"
-        android:layout_marginBottom="-64dp"
-        android:ems="10"
-        android:text="@string/ingredients" />
+        android:text="ʏᴜᴍᴍʏ ᴍᴜᴍᴍʏ"
+        android:textSize="44sp"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:drawableLeft="@drawable/food2"
+        android:drawableRight="@drawable/food2"
+        android:textColor="@color/black"/>
 
+    <TextView
+        android:layout_below="@+id/one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="M̳a̳k̳e̳ ̳a̳ ̳F̳o̳o̳d̳ ̳a̳s̳ ̳Y̳o̳u̳r̳ ̳C̳h̳o̳i̳c̳e̳"
+        android:textSize="22dp"
+        android:gravity="center"
+        android:textColor="#0099CC"/>
+
+    <Button
+        android:id="@+id/sign_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign up"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"/>
 
 </RelativeLayout>
+
